@@ -1,0 +1,22 @@
+<h1>받은 메일함#send_mail</h1>
+
+<div class='container'>
+    <form action='/sm' method='POST'>
+      <div class="form-group">
+        <label for="exampleFormControlInput1"><span style='font-style:italic'>보내는사람</span></label>
+        <input type="email" class="form-control" name="sendman" id="exampleFormControlInput1" value=<%=@mail_sendman%>>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1"><span style='font-style:italic'>받는 사람</span></label>
+        <input type="email" class="form-control" name="getman" id="exampleFormControlInput1" value=<%=@mail_getman%>>
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Example label</label>
+        <input type="text" class="form-control" name="subject" id="formGroupExampleInput" value=<%=@mail_subject%>>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" name="body" id="exampleFormControlTextarea1" rows="3"><%=@mail_body%></textarea>
+      </div>
+    </form>
+</div>

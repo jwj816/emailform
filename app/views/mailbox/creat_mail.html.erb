@@ -1,0 +1,22 @@
+<h1>보낸 메일함#creat_mail</h1>
+<div class='container'>
+    <form action='/sm' method='POST'>
+      <div class="form-group">
+        <label for="exampleFormControlInput1"><span style='font-style:italic'>보내는사람</span></label>
+        <input type="email" class="form-control" name="sendman" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1"><span style='font-style:italic'>받는 사람</span></label>
+        <input type="email" class="form-control" name="getman" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Subject</label>
+        <input type="text" class="form-control" name="subject" id="formGroupExampleInput" placeholder="Example input">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1"> 내용 </label>
+        <textarea class="form-control" name="body" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
